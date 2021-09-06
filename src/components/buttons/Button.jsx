@@ -4,18 +4,13 @@ import { StyledButton } from './styles/Button.style';
 
 
 
-export const Button=({color = 'primary', shape = 'rectangle'})=>
+export const Button=({...props})=>
  {
  
   return (
      
       <div>
-        <StyledButton  
-          color={color}
-          shape={shape}
-        
-        
-        > Button
+        <StyledButton  {...props}  > Button
         </StyledButton>
       </div>
    );
