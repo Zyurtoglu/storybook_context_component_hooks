@@ -1,11 +1,12 @@
 import shape from './shape';
-import setColor from './color';
+import color from './color';
 import styled from 'styled-components';
+
 
 export const ButtonProps=(args)=> {
  
-  shape={...args};
-  setColor={...args};
+  shape={shape};
+  color={color};
 
 };
 
@@ -29,7 +30,7 @@ export const StyledButton= styled.button`
   letter-spacing: 0.2px;
   
   shape: ButtonProps.shape;
-  color: ButtonProps.setColor;
+  color: ButtonProps.color;
   `;
 
 

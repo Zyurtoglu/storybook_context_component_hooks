@@ -4,14 +4,13 @@ import { StyledButton } from './styles/Button.style';
 
 
 
-export const Button=({...props})=>
+export const Button=()=>
  {
  
   return (
      
       <div>
-        <StyledButton  {...props}  > Button
-        </StyledButton>
+        <StyledButton   > Button </StyledButton>
       </div>
    );
 

@@ -27,25 +27,25 @@ export const color={
     success
 }
 
-export const setColor=()=>{
-    switch (color) {
-        case 'primary':
-            return <primary/>;         
+// export const setColor=()=>{
+//     switch (color) {
+//         case 'primary':
+//             return <primary/>;         
     
-        case 'warning':
-            return <warning />;         
+//         case 'warning':
+//             return <warning />;         
     
-        case 'success':
-            return <success />;         
+//         case 'success':
+//             return <success />;         
   
-        case 'error':
-            return <error />;         
-            
-        default:
-             return null
-    }
-};
+//         case 'error':
+//             return <error />;         
+
+//         default:
+//              return null
+//     }
+// };
 
 
 
-export default setColor;
+export default color;
