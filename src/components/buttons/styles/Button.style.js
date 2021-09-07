@@ -3,15 +3,7 @@ import color from './color';
 import styled from 'styled-components';
 
 
-export const ButtonProps=(args)=> {
- 
-  shape={shape};
-  color={color};
-
-};
-
-
-export const StyledButton= styled.button`
+export const StyledButton= styled.button.attrs(props=> ({color:props.color, shape:props.shape }))`
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -29,8 +21,10 @@ export const StyledButton= styled.button`
   line-height: 1.8rem;
   letter-spacing: 0.2px;
   
-  shape: ButtonProps.shape;
-  color: ButtonProps.color;
+  color: ${props => props.color};
+  shape: ${props => props.shape};
+
+
   `;
 
 
