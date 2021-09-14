@@ -7,6 +7,7 @@ export default {
   title: 'Button',
   component: Button,
   argTypes: {
+
     color: {
       control: {
         type: 'select',
@@ -32,17 +33,20 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) =><Button {...args}/>;
 
 
 
 
 export const Rectangle = Template.bind({});
 Rectangle.args = {
-  shape: 'rectangle'
+  shape: 'rectangle',
+
 };
 
 export const Circular = Template.bind({});
 Circular.args = {
-  shape: 'circular'
+  shape: 'circular',
+
 };
+

@@ -1,51 +1,28 @@
-import styled from 'styled-components';
+import {css} from 'styled-components';
 
 
-export const primary = styled.button`
+export const primary = css`
     color:white;
     background-color:blue;
 `;
 
-export const warning = styled.button`
+export const warning = css`
     color:white;
     background-color:orange;
 `;
-export const success = styled.button`
-    color:white;
-    background-color: green;
-`;
+ export const success = css`
+     color:white;
+     background-color: green;
+ `;
 
-export const error = styled.button`
+export const error = css`
     color:white;
     background-color: red;
-`;
+  `;
 
-export const color={
-    primary, 
-    warning,
-    error,
-    success
-}
-
-// export const setColor=()=>{
-//     switch (color) {
-//         case 'primary':
-//             return <primary/>;         
-    
-//         case 'warning':
-//             return <warning />;         
-    
-//         case 'success':
-//             return <success />;         
-  
-//         case 'error':
-//             return <error />;         
-
-//         default:
-//              return null
-//     }
-// };
+ export const setColor=[primary,warning,error, success]
+ 
+export default setColor;
 
 
 
-export default color;
