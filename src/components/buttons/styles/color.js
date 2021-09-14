@@ -20,7 +20,7 @@ export const error = css`
     background-color: red;
   `;
 
- export const setColor=[primary,warning,error, success]
+ export const setColor=[primary,warning,success,error]
  
 export default setColor;
 
