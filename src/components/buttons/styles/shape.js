@@ -12,5 +12,6 @@ const circular =css`
   border-radius: 50%;
 `;
 
-const shape=[rectangle,circular];
+const shape={rectangle,circular};
+
 export default shape;

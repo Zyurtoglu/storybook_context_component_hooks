@@ -1,29 +1,28 @@
-
 import React from 'react';
 import StyledButton from './styles/Button.style';
 
 
 
-
 export const Button=({
   
-  shape="rectangle",
-  ...rest
+  color="primary",
+  shape="rectangle"
+
 })=>{
-     
-        return(
-          <div>
-            <StyledButton 
+      
+          return(
+            <div>
+              <StyledButton 
+                  color={color}
+                  shape={shape}
               
-               shape='rectangle'
-               { ...rest}
-            >
-              Save
-            </StyledButton>
-          </div>
-        );
-     
-    
+              >
+                Save
+              </StyledButton>
+            </div>
+          );
+      
+      
 }
 
   
