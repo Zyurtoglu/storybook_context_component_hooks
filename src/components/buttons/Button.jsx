@@ -1,23 +1,28 @@
+import { rest } from 'lodash';
 import React from 'react';
-import StyledButton from './styles/Button.style';
+import {StyledButton ,  LeftIcon} from './styles/Button.style';
 
 
 
 export const Button=({
   
   color="primary",
-  shape="rectangle"
-
+  leftIcon=null,
+  children,
+  ...rest
+  
 })=>{
       
           return(
             <div>
               <StyledButton 
                   color={color}
-                  shape={shape}
+              
+                  {...rest}
+                  
               
               >
-                Save
+               <LeftIcon size="small">{leftIcon}</LeftIcon>{children}
               </StyledButton>
             </div>
           );

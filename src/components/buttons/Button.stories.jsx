@@ -1,7 +1,9 @@
 
 import React from 'react';
 import  Button  from './Button';
+import { FiSave} from "react-icons/fi";
 
+//const firstUpperModule = require("first_upper-module");
 
 export default {
   title: 'Button',
@@ -33,7 +35,8 @@ export default {
   },
 };
 
-const Template = (args) =><Button {...args}/>;
+//const button_var_name="saVe";{firstUpperModule(button_var_name)}
+const Template = (args) =><Button {...args}>save </Button>;
 
 
 
@@ -41,12 +44,22 @@ const Template = (args) =><Button {...args}/>;
 export const Rectangle = Template.bind({});
 Rectangle.args = {
   shape: 'rectangle',
+  children: 'Submit',
+ 
 
 };
 
 export const Circular = Template.bind({});
 Circular.args = {
   shape: 'circular',
+  children: <FiSave size={20} />,
 
 };
 
+export const WithIcon = Template.bind({});
+  WithIcon.args = {
+    leftIcon: <FiSave size={20} />,
+    // children:'FiSave'
+    
+   
+};

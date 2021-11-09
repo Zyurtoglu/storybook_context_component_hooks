@@ -17,10 +17,17 @@ export const StyledButton=styled.button`
     justify-content: center;
     align-items: center;
 
-    ${(props) => color[props.color]}
+    ${(props)=>color[props.color]}
     ${(props) => shape[props.shape]}
 
 `
 
+export const LeftIcon = styled.span`
+  margin-inline-end: ${(props) => props}rem;
+`;
+
+export const RightIcon = styled.span`
+  margin-inline-start: ${(props) => props}rem;
+`;
 
 export default StyledButton;
