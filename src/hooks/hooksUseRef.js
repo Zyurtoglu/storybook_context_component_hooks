@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 
 
-const HooksUseReff = () => {
+const HooksUseRef = () => {
     const inputRef = useRef();
     function handleClick(e) {
         document.getElementById('myInput');
@@ -16,7 +16,7 @@ const HooksUseReff = () => {
   );
 }
 
-export default HooksUseReff;
+export default HooksUseRef;
 
 
 //refler dom elemanına yada react render metodu içerisnde oluşturulan ögelere erişmeyi sağlar.
