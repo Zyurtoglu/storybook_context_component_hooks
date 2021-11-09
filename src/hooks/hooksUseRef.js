@@ -4,6 +4,7 @@ import React, {useRef} from 'react';
 const HooksUseReff = () => {
     const inputRef = useRef();
     function handleClick(e) {
+        document.getElementById('myInput');
         console.log(inputRef.current);
     }
   return (
