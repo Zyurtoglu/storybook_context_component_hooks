@@ -38,3 +38,5 @@ const UnMount = (props)=>{
 export default UnMount;
 
 // isShow true ise child ı return et 
+//Bir bileşen propslarını değiştiremez, ancak stateini değiştirebilir.
+// propsın bir üst bileşenden geçirilmesidir, ancak state bileşenin kendisi tarafından yönetilir. 
